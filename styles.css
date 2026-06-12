@@ -328,8 +328,8 @@ p { margin: 0; }
 }
 
 .feature-strip--image-only img {
-  aspect-ratio: 16 / 7;
-  max-height: 330px;
+  aspect-ratio: 16 / 9;
+  max-height: none;
 }
 
 .subtabs {
@@ -653,7 +653,7 @@ p { margin: 0; }
 
   .feature-strip--image-only img {
     aspect-ratio: 16 / 9;
-    max-height: 230px;
+    max-height: none;
   }
 
   .photo-list .menu-item.with-photo {
