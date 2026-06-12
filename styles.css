@@ -618,6 +618,9 @@ p { margin: 0; }
   .tab-dock {
     margin-top: -32px;
     grid-auto-columns: minmax(128px, 42vw);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .24);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .menu-status {
