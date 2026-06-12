@@ -85,6 +85,7 @@ img {
   overflow: hidden;
   isolation: isolate;
   text-align: center;
+  background: #0d0909;
   border-bottom: 1px solid rgba(255, 245, 234, .14);
 }
 
@@ -98,9 +99,9 @@ img {
 
 .cover::before {
   background:
-    radial-gradient(circle at 50% 34%, rgba(214, 22, 22, .16), transparent 22rem),
-    linear-gradient(180deg, rgba(8, 6, 6, .18), rgba(17, 10, 10, .76) 56%, rgba(12, 8, 8, .96)),
-    linear-gradient(90deg, rgba(8, 8, 8, .96) 0%, rgba(8, 8, 8, .88) 26%, rgba(8, 8, 8, .42) 52%, rgba(8, 8, 8, .82) 100%);
+    linear-gradient(135deg, rgba(214, 22, 22, .22) 0 12%, transparent 12% 100%),
+    linear-gradient(315deg, rgba(214, 22, 22, .13) 0 18%, transparent 18% 100%),
+    linear-gradient(180deg, #130a0a 0%, #0d0909 46%, #080606 100%);
 }
 
 .cover::after {
@@ -109,20 +110,8 @@ img {
   border: 1px solid rgba(255, 244, 232, .18);
   box-shadow:
     inset 0 0 0 1px rgba(214, 22, 22, .08),
-    inset 0 -110px 130px rgba(8, 8, 8, .24);
-}
-
-.cover-media {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-}
-
-.cover-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+    inset 0 -110px 130px rgba(8, 8, 8, .24),
+    0 0 80px rgba(214, 22, 22, .08);
 }
 
 .cover-content {
@@ -543,12 +532,9 @@ p { margin: 0; }
 
   .cover::before {
     background:
-      linear-gradient(180deg, rgba(8, 8, 8, .22), rgba(17, 10, 10, .82) 58%, rgba(12, 8, 8, .98)),
-      linear-gradient(90deg, rgba(8, 8, 8, .84), rgba(8, 8, 8, .28) 42%, transparent 72%);
-  }
-
-  .cover-media img {
-    object-position: center top;
+      linear-gradient(135deg, rgba(214, 22, 22, .2) 0 24%, transparent 24% 100%),
+      linear-gradient(315deg, rgba(214, 22, 22, .12) 0 18%, transparent 18% 100%),
+      linear-gradient(180deg, #150b0b 0%, #0d0909 54%, #080606 100%);
   }
 
   .cover-content {
