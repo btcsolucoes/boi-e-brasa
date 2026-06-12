@@ -520,6 +520,15 @@ p { margin: 0; }
   font-weight: 700;
 }
 
+.menu-footer small {
+  color: rgba(255, 248, 236, .46);
+  font-family: var(--brand);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 820px) {
   .menu-shell { padding-inline: 12px; }
 
