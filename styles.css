@@ -322,6 +322,16 @@ p { margin: 0; }
   line-height: 1.65;
 }
 
+.feature-strip--image-only {
+  display: block;
+  padding: 10px;
+}
+
+.feature-strip--image-only img {
+  aspect-ratio: 16 / 7;
+  max-height: 330px;
+}
+
 .subtabs {
   display: grid;
   grid-auto-columns: minmax(112px, 1fr);
@@ -639,6 +649,11 @@ p { margin: 0; }
   .wine-board,
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-strip--image-only img {
+    aspect-ratio: 16 / 9;
+    max-height: 230px;
   }
 
   .photo-list .menu-item.with-photo {
