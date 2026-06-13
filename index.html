@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=qrstack-boi-e-brasa-v4-photo-framing">
+  <link rel="stylesheet" href="styles.css?v=qrstack-boi-e-brasa-v5-mobile-clean">
 </head>
 <body data-theme="rodizio">
   <main class="menu-shell">
@@ -52,14 +52,20 @@
         </div>
 
         <div class="feature-strip feature-strip--image-only">
-          <img src="assets/sobre-boi-e-brasa-card.jpg?v=photo-framing" alt="Corte especial servido no Boi &amp; Brasa" loading="lazy" decoding="async">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/sobre-boi-e-brasa-mobile.webp?v=mobile-clean" type="image/webp">
+            <source media="(max-width: 640px)" srcset="assets/sobre-boi-e-brasa-mobile.jpg?v=mobile-clean">
+            <source srcset="assets/sobre-boi-e-brasa-card.webp?v=mobile-clean" type="image/webp">
+            <img src="assets/sobre-boi-e-brasa-card.jpg?v=mobile-clean" alt="Corte especial servido no Boi &amp; Brasa" loading="lazy" decoding="async" width="1180" height="664">
+          </picture>
         </div>
 
         <div class="subtabs" role="tablist" aria-label="Categorias de carnes do rodízio">
           <button class="subtab is-active" type="button" data-target="rodizio-bovino">Bovino</button>
           <button class="subtab" type="button" data-target="rodizio-cordeiro">Cordeiro</button>
           <button class="subtab" type="button" data-target="rodizio-suino">Suíno</button>
-          <button class="subtab" type="button" data-target="rodizio-aves-peixes">Aves e Peixes</button>
+          <button class="subtab" type="button" data-target="rodizio-aves">Aves</button>
+          <button class="subtab" type="button" data-target="rodizio-peixes">Peixes</button>
         </div>
 
         <div class="subpanel is-active" id="rodizio-bovino">
@@ -115,24 +121,17 @@
           </div>
         </div>
 
-        <div class="subpanel" id="rodizio-aves-peixes" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de aves e peixes do rodízio">
-            <button class="subtab is-active" type="button" data-target="rodizio-aves">Aves</button>
-            <button class="subtab" type="button" data-target="rodizio-peixes">Peixes</button>
+        <div class="subpanel" id="rodizio-aves" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opção leve da sequência, preparada para equilibrar o rodízio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Brasa</span><h3>Aves do dia</h3><p>Preparos variáveis para alternar com bovinos, cordeiro e suíno.</p></div><strong>Consulte</strong></article>
           </div>
+        </div>
 
-          <div class="subpanel is-active" id="rodizio-aves">
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opção leve da sequência, preparada para equilibrar o rodízio.</p></div><strong>Incluso</strong></article>
-              <article class="menu-item"><div><span>Brasa</span><h3>Aves do dia</h3><p>Preparos variáveis para alternar com bovinos, cordeiro e suíno.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="rodizio-peixes" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade da casa para equilibrar a sequência da brasa.</p></div><strong>Incluso</strong></article>
-              <article class="menu-item"><div><span>Leve</span><h3>Peixe da casa</h3><p>Opção para quem quer equilibrar a sequência da brasa com um corte mais leve.</p></div><strong>Consulte</strong></article>
-            </div>
+        <div class="subpanel" id="rodizio-peixes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade da casa para equilibrar a sequência da brasa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Leve</span><h3>Peixe da casa</h3><p>Opção para quem quer equilibrar a sequência da brasa com um corte mais leve.</p></div><strong>Consulte</strong></article>
           </div>
         </div>
       </section>
@@ -145,7 +144,12 @@
         </div>
 
         <div class="feature-strip feature-strip--image-only">
-          <img src="assets/buffet-boi-e-brasa-card.jpg?v=photo-framing" alt="Buffet do Boi &amp; Brasa" loading="lazy" decoding="async">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/buffet-boi-e-brasa-mobile.webp?v=mobile-clean" type="image/webp">
+            <source media="(max-width: 640px)" srcset="assets/buffet-boi-e-brasa-mobile.jpg?v=mobile-clean">
+            <source srcset="assets/buffet-boi-e-brasa-card.webp?v=mobile-clean" type="image/webp">
+            <img src="assets/buffet-boi-e-brasa-card.jpg?v=mobile-clean" alt="Buffet do Boi &amp; Brasa" loading="lazy" decoding="async" width="1180" height="664">
+          </picture>
         </div>
 
         <div class="subtabs" role="tablist" aria-label="Categorias do buffet">
@@ -383,15 +387,19 @@
         </div>
 
         <div class="feature-strip feature-strip--image-only">
-          <img src="assets/american-bar-boi-e-brasa-card.jpg?v=photo-framing" alt="American bar do Boi &amp; Brasa" loading="lazy" decoding="async">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/american-bar-boi-e-brasa-mobile.webp?v=mobile-clean" type="image/webp">
+            <source media="(max-width: 640px)" srcset="assets/american-bar-boi-e-brasa-mobile.jpg?v=mobile-clean">
+            <source srcset="assets/american-bar-boi-e-brasa-card.webp?v=mobile-clean" type="image/webp">
+            <img src="assets/american-bar-boi-e-brasa-card.jpg?v=mobile-clean" alt="American bar do Boi &amp; Brasa" loading="lazy" decoding="async" width="1180" height="664">
+          </picture>
         </div>
 
         <div class="subtabs" role="tablist" aria-label="Categorias de bebidas">
           <button class="subtab is-active" type="button" data-target="bebidas-caipirinhas">Caipirinhas</button>
           <button class="subtab" type="button" data-target="bebidas-drinks">Drinks</button>
-          <button class="subtab" type="button" data-target="bebidas-sem-alcool">Sem Álcool</button>
-          <button class="subtab" type="button" data-target="bebidas-nao-alcoolicas">Não Alcoólicas</button>
           <button class="subtab" type="button" data-target="bebidas-destilados">Destilados</button>
+          <button class="subtab" type="button" data-target="bebidas-sem-alcool">Sem álcool</button>
         </div>
 
         <div class="subpanel is-active" id="bebidas-caipirinhas">
@@ -462,64 +470,46 @@
         </div>
 
         <div class="subpanel" id="bebidas-sem-alcool" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de coquetéis sem álcool">
-            <button class="subtab is-active" type="button" data-target="sem-alcool-coqueteis">Coquetéis</button>
-            <button class="subtab" type="button" data-target="sem-alcool-frutas">Frutas</button>
-            <button class="subtab" type="button" data-target="sem-alcool-refrescantes">Refrescantes</button>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de bebidas sem álcool">
+            <button class="subtab is-active" type="button" data-target="sem-alcool-mocktails">Mocktails</button>
+            <button class="subtab" type="button" data-target="sem-alcool-aguas">Águas</button>
+            <button class="subtab" type="button" data-target="sem-alcool-sucos">Sucos</button>
+            <button class="subtab" type="button" data-target="sem-alcool-refrigerantes">Refrigerantes</button>
+            <button class="subtab" type="button" data-target="sem-alcool-cafes">Cafés</button>
           </div>
 
-          <div class="subpanel is-active" id="sem-alcool-coqueteis">
+          <div class="subpanel is-active" id="sem-alcool-mocktails">
             <div class="menu-list">
-              <article class="menu-item"><div><span>Coquetel</span><h3>Coquetéis sem álcool</h3><p>Opções do bar para quem prefere uma experiência sem bebida alcoólica.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Zero álcool</span><h3>Mocktail da casa</h3><p>Preparo do bar com frutas, gelo e finalização aromática.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="sem-alcool-frutas" hidden>
-            <div class="menu-list">
               <article class="menu-item"><div><span>Frutas</span><h3>Coquetel de frutas</h3><p>Bebida leve e frutada para acompanhar buffet e sobremesas.</p></div><strong>Consulte</strong></article>
-              <article class="menu-item"><div><span>Natural</span><h3>Frutas frescas batidas</h3><p>Opção variável conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="sem-alcool-refrescantes" hidden>
-            <div class="menu-list">
               <article class="menu-item"><div><span>Refrescante</span><h3>Soda italiana</h3><p>Opção gaseificada e aromática sem álcool.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Cítrico</span><h3>Limonada especial</h3><p>Bebida leve para acompanhar cortes da brasa e saladas.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
-        </div>
 
-        <div class="subpanel" id="bebidas-nao-alcoolicas" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de bebidas não alcoólicas">
-            <button class="subtab is-active" type="button" data-target="nao-alcoolicas-aguas">Águas</button>
-            <button class="subtab" type="button" data-target="nao-alcoolicas-sucos">Sucos</button>
-            <button class="subtab" type="button" data-target="nao-alcoolicas-refrigerantes">Refrigerantes</button>
-            <button class="subtab" type="button" data-target="nao-alcoolicas-cafes">Cafés</button>
-          </div>
-
-          <div class="subpanel is-active" id="nao-alcoolicas-aguas">
+          <div class="subpanel" id="sem-alcool-aguas" hidden>
             <div class="menu-list">
               <article class="menu-item"><div><span>Água</span><h3>Água mineral</h3><p>Com ou sem gás.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Mesa</span><h3>Água com gás</h3><p>Boa opção para acompanhar carnes, frios e vinhos.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
 
-          <div class="subpanel" id="nao-alcoolicas-sucos" hidden>
+          <div class="subpanel" id="sem-alcool-sucos" hidden>
             <div class="menu-list">
               <article class="menu-item"><div><span>Frutas</span><h3>Sucos naturais</h3><p>Sabores variados conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Frutas</span><h3>Sucos especiais</h3><p>Combinações de frutas para acompanhar o buffet e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Natural</span><h3>Frutas frescas batidas</h3><p>Opção variável conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
 
-          <div class="subpanel" id="nao-alcoolicas-refrigerantes" hidden>
+          <div class="subpanel" id="sem-alcool-refrigerantes" hidden>
             <div class="menu-list">
               <article class="menu-item"><div><span>Clássico</span><h3>Refrigerantes</h3><p>Opções tradicionais para acompanhar o rodízio.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Zero</span><h3>Refrigerantes zero</h3><p>Opções sem açúcar, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
 
-          <div class="subpanel" id="nao-alcoolicas-cafes" hidden>
+          <div class="subpanel" id="sem-alcool-cafes" hidden>
             <div class="menu-list">
               <article class="menu-item"><div><span>Café</span><h3>Café espresso</h3><p>Boa pedida para fechar a refeição ou acompanhar sobremesas.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Café</span><h3>Café com leite</h3><p>Opção suave para acompanhar doces e tortas.</p></div><strong>Consulte</strong></article>
@@ -675,6 +665,6 @@
     </footer>
   </main>
 
-  <script src="script.js?v=qrstack-boi-e-brasa-v1-20260611"></script>
+  <script src="script.js?v=qrstack-boi-e-brasa-v5-mobile-clean"></script>
 </body>
 </html>

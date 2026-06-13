@@ -327,6 +327,10 @@ p { margin: 0; }
   padding: 10px;
 }
 
+.feature-strip--image-only picture {
+  display: block;
+}
+
 .feature-strip--image-only img {
   aspect-ratio: 16 / 9;
   max-height: none;
@@ -652,7 +656,7 @@ p { margin: 0; }
   }
 
   .feature-strip--image-only img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     max-height: none;
   }
 
